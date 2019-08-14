@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf-8
 import keras
 keras.__version__
 from keras.preprocessing.image import load_img, img_to_array

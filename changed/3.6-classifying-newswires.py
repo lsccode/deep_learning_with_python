@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf-8
 import keras
 keras.__version__
 from keras.datasets import reuters
