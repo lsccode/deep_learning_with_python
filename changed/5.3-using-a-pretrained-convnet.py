@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.applications import VGG16
+
+print("keras version {0}",keras.__version__)
+
 conv_base = VGG16(weights='imagenet',
                   include_top=False,
                   input_shape=(150, 150, 3))

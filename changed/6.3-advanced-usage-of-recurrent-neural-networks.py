@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 import os
+
+print("keras version {0}",keras.__version__)
+
 data_dir = '/home/ubuntu/data/'
 fname = os.path.join(data_dir, 'jena_climate_2009_2016.csv')
 f = open(fname)

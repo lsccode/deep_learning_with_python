@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras import backend as K
+
+print("keras version {0}",keras.__version__)
+
 K.clear_session()
 z_mean, z_log_variance = encoder(input_img)
 z = z_mean + exp(z_log_variance) * epsilon

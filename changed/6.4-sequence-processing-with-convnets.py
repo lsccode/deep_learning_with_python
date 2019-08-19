@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.datasets import imdb
 from keras.preprocessing import sequence
+
+print("keras version {0}",keras.__version__)
+
 max_features = 10000  # number of words to consider as features
 max_len = 500  # cut texts after this number of words (among top max_features most common words)
 print('Loading data...')

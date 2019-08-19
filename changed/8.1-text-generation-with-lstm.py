@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 import keras
 import numpy as np
+
+print("keras version {0}",keras.__version__)
+
 path = keras.utils.get_file(
     'nietzsche.txt',
     origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')

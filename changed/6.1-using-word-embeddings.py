@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.layers import Embedding
+
+print("keras version {0}",keras.__version__)
+
 embedding_layer = Embedding(1000, 64)
 from keras.datasets import imdb
 from keras import preprocessing

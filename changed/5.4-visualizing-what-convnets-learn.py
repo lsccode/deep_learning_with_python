@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.models import load_model
+
+print("keras version {0}",keras.__version__)
+
 model = load_model('cats_and_dogs_small_2.h5')
 model.summary()  # As a reminder.
 img_path = '/Users/fchollet/Downloads/cats_and_dogs_small/test/cats/cat.1700.jpg'

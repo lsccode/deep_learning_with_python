@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.layers import SimpleRNN
 from keras.models import Sequential
 from keras.layers import Embedding, SimpleRNN
+
+print("keras version {0}",keras.__version__)
+
 model = Sequential()
 model.add(Embedding(10000, 32))
 model.add(SimpleRNN(32))

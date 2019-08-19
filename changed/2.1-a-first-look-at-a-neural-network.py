@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 from keras.datasets import mnist
+
+print("keras version {0}",keras.__version__)
+
 
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 

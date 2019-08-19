@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import keras
-keras.__version__
 import numpy as np
+
+print("keras version {0}",keras.__version__)
+
 samples = ['The cat sat on the mat.', 'The dog ate my homework.']
 token_index = {}
 for sample in samples:
