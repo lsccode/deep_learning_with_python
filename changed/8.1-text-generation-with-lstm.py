@@ -4,7 +4,7 @@ import keras
 import keras
 import numpy as np
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 path = keras.utils.get_file(
     'nietzsche.txt',

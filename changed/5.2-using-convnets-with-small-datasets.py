@@ -3,7 +3,7 @@
 import keras
 import os, shutil
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 original_dataset_dir = '/Users/fchollet/Downloads/kaggle_original_data'
 base_dir = '/Users/fchollet/Downloads/cats_and_dogs_small'

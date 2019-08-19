@@ -3,7 +3,7 @@
 import keras
 from keras.models import load_model
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 model = load_model('cats_and_dogs_small_2.h5')
 model.summary()  # As a reminder.

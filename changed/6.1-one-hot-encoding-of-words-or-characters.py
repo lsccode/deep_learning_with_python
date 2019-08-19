@@ -3,7 +3,7 @@
 import keras
 import numpy as np
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 samples = ['The cat sat on the mat.', 'The dog ate my homework.']
 token_index = {}

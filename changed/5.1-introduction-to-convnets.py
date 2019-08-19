@@ -4,7 +4,7 @@ import keras
 from keras import layers
 from keras import models
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 model = models.Sequential()
 model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))

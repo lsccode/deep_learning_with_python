@@ -3,7 +3,7 @@
 import keras
 from keras.datasets import boston_housing
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 (train_data, train_targets), (test_data, test_targets) =  boston_housing.load_data()
 

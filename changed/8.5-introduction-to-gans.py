@@ -4,7 +4,7 @@ import keras
 from keras import layers
 import numpy as np
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 latent_dim = 32
 height = 32

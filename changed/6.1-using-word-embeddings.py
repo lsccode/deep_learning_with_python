@@ -3,7 +3,7 @@
 import keras
 from keras.layers import Embedding
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 embedding_layer = Embedding(1000, 64)
 from keras.datasets import imdb

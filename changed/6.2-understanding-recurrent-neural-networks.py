@@ -5,7 +5,7 @@ from keras.layers import SimpleRNN
 from keras.models import Sequential
 from keras.layers import Embedding, SimpleRNN
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 model = Sequential()
 model.add(Embedding(10000, 32))

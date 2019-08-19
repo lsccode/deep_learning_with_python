@@ -3,8 +3,7 @@
 import keras
 from keras.datasets import reuters
 
-print("keras version {0}",keras.__version__)
-
+print("keras version {0}".format(keras.__version__))
 
 (train_data, train_labels), (test_data, test_labels) = reuters.load_data(num_words=10000)
 len(train_data)

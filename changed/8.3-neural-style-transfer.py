@@ -3,7 +3,7 @@
 import keras
 from keras.preprocessing.image import load_img, img_to_array
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 target_image_path = '/home/ubuntu/data/portrait.png'
 style_reference_image_path = '/home/ubuntu/data/popova.jpg'

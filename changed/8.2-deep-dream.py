@@ -4,7 +4,7 @@ import keras
 from keras.applications import inception_v3
 from keras import backend as K
 
-print("keras version {0}",keras.__version__)
+print("keras version {0}".format(keras.__version__))
 
 K.set_learning_phase(0)
 model = inception_v3.InceptionV3(weights='imagenet',

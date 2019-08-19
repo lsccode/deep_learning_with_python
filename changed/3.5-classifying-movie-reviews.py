@@ -3,8 +3,7 @@
 import keras
 from keras.datasets import imdb
 
-print("keras version {0}",keras.__version__)
-
+print("keras version {0}".format(keras.__version__))
 
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 print(train_data[0])
