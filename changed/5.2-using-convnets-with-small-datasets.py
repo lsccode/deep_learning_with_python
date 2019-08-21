@@ -5,8 +5,8 @@ import os, shutil
 
 print("keras version {0}".format(keras.__version__))
 
-original_dataset_dir = 'kaggle_original_data'
-base_dir = 'cats_and_dogs_small'
+original_dataset_dir = '../kaggle_original_data'
+base_dir = '../cats_and_dogs_small'
 
 
 if os.access(base_dir, os.F_OK):
