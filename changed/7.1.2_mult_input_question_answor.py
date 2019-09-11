@@ -29,13 +29,12 @@ import keras
 num_samples = 1000
 max_length = 100
 
-text = np.random.randint(1, text_vocabulary_size,
-                         size=(num_samples, max_length))
+text = np.random.randint(1, text_vocabulary_size,size=(num_samples, max_length))
 
 question = np.random.randint(1, question_vocabulary_size,size=(num_samples, max_length))
 answers = np.random.randint(answer_vocabulary_size, size=(num_samples))
 answers = keras.utils.to_categorical(answers, answer_vocabulary_size)
 
-model.fit([text, question], answers, epochs=10, batch_size=128)
+# model.fit([text, question], answers, epochs=10, batch_size=128)
 
 model.fit({'text': text, 'question': question}, answers,epochs=10, batch_size=128)

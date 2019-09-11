@@ -26,4 +26,5 @@ predictions = layers.Dense(1, activation='sigmoid')(merged)
 # train such a model, the weights of the LSTM layer
 # are updated based on both inputs.
 model = Model([left_input, right_input], predictions)
+
 model.fit([left_data, right_data], targets)
