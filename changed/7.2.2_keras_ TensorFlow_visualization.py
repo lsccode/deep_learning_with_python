@@ -56,6 +56,3 @@ history = model.fit(x_train, y_train,
                     callbacks=callbacks)
 
 # $ tensorboard --logdir=my_log_dir
-
-from keras.utils import plot_model
-plot_model(model, to_file='model.png')

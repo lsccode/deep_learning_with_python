@@ -1,2 +1,5 @@
 .idea/
 *.jpg
+*.png
+*.npz
+my_log_dir/
